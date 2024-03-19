@@ -1,0 +1,37 @@
+let mapleader=" "
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+set surround
+set commentary
+set easymotion
+set sneak
+set quickscope
+
+set nu
+set relativenumber
+set scrolloff=10
+set showmode
+set showcmd
+set ideajoin
+set ideaput
+set visualbell
+set clipboard+=unnamed
+
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+map <leader>bn <Action>(NextTab)
+map <leader>bb <Action>(PreviousTab)
+map <leader>w <Action>(SaveAll)
+map <leader>c <Action>(CloseEditor)
+map <leader>d <Action>(Debug)
+
+inoremap <C-j> <Action>(PopupMenu-selectNext)
+inoremap <C-k> <Action>(PopupMenu-selectPrev)
+
+"clear search highlighting when pressing CR after a search.
+nnoremap <CR> :noh<CR><CR>
+
+
